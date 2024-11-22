@@ -1,59 +1,104 @@
-# Graduation-project-DEPI
-Here’s a complete **README.md** file that includes space for team member names and all the necessary project details:
+# Security Assessment of Ginandjuice.shop
+
+## Graduation Project - DEPI  
+**Team Name:** HACK TACTIX  
+**Date of Assessment:** October 24, 2024  
 
 ---
-
-# Security Assessment of Ginandjuice.shop
 
 ## Project Overview
 
-As part of our graduation project at DEPI, **HACK TACTIX** conducted a comprehensive security assessment of the internal corporate network of **ginandjuice.shop**. This penetration test, performed on **October 24, 2024**, simulated the actions of an external threat actor to identify and exploit vulnerabilities, assess the organization's security posture, and provide actionable recommendations for remediation.
+As part of our graduation project, **HACK TACTIX** conducted a security assessment of the internal corporate network of **ginandjuice.shop**. This penetration test simulated the actions of an external threat actor aiming to identify vulnerabilities and provide actionable recommendations to strengthen the security of the organization's systems.
 
 ---
 
-## Key Findings
+## Key Findings  
 
-During the assessment, a total of **12 vulnerabilities** were discovered, categorized as follows:
+During the assessment, **12 vulnerabilities** were identified and categorized as follows:
 
-| Severity  | Count |
-|-----------|-------|
-| Critical  | 0     |
-| High      | 5     |
-| Medium    | 2     |
-| Low       | 3     |
+| **Severity**   | **Count** |
+|----------------|-----------|
+| Critical       | 0         |
+| High           | 5         |
+| Medium         | 2         |
+| Low            | 3         |
+| Informational  | 2         |
 
-### Notable High-Severity Vulnerabilities:
-- **SQL Injection** (CVSS: 8.8): Exploitable to manipulate the database, execute unauthorized queries, and exfiltrate sensitive data.
-- **Cross-Site Scripting (XSS):** Includes reflected and DOM-based XSS, enabling session hijacking, credential theft, and malicious redirection.
-- **XML External Entity (XXE) Injection:** Risk of internal file exposure and denial-of-service (DoS) attacks.
-- **Client-Side Template Injection:** Potential for remote code execution and data manipulation.
+### Vulnerabilities Identified  
 
-### Medium and Low-Severity Vulnerabilities:
-- Outdated or vulnerable JavaScript libraries.
-- Missing security headers, such as HSTS and CSP.
-- Misconfigured cookies.
+1. **SQL Injection** (CVSS: 8.8)  
+   - **Severity:** High  
+   - **Impact:** Unauthorized database manipulation and potential data exfiltration.  
+   - **Instance:** Page 13  
+
+2. **Cross-Site Scripting (Reflected)** (CVSS: 7.3)  
+   - **Severity:** High  
+   - **Impact:** Malicious script injection, session hijacking, or credential theft.  
+   - **Instance:** Page 19  
+
+3. **DOM-based Cross-Site Scripting (XSS)** (CVSS: 7.2)  
+   - **Severity:** High  
+   - **Impact:** Exploitation of dynamic client-side scripts to execute malicious payloads.  
+   - **Instance:** Page 20  
+
+4. **Client-Side Template Injection** (CVSS: 7.0)  
+   - **Severity:** High  
+   - **Impact:** Remote code execution or manipulation of client-side data.  
+   - **Instance:** Page 21  
+
+5. **XML External Entity (XXE) Injection** (CVSS: 8.5)  
+   - **Severity:** High  
+   - **Impact:** Access to internal files, denial-of-service (DoS), or sensitive data leaks.  
+   - **Instance:** Page 24  
+
+6. **Vulnerable JavaScript Libraries** (CVSS: 5.4)  
+   - **Severity:** Medium  
+   - **Impact:** Exploitation of outdated dependencies.  
+   - **Instance:** Page 26  
+
+7. **HTTP Response Header Injection** (CVSS: 6.5)  
+   - **Severity:** Medium  
+   - **Impact:** Manipulation of HTTP headers to compromise client-server communication.  
+   - **Instance:** Page 27  
+
+8. **Cookies Without HttpOnly Flag Set** (CVSS: 3.1)  
+   - **Severity:** Low  
+   - **Impact:** Increased risk of client-side attacks, such as XSS.  
+   - **Instance:** Page 30  
+
+9. **Cookies Without Secure Flag Set** (CVSS: 3.1)  
+   - **Severity:** Low  
+   - **Impact:** Risk of exposure in unsecured connections.  
+   - **Instance:** Page 31  
+
+10. **HTTP Strict Transport Security (HSTS) Not Implemented** (CVSS: 3.1)  
+    - **Severity:** Low  
+    - **Impact:** Risk of downgrade attacks and man-in-the-middle attacks.  
+    - **Instance:** Page 32  
+
+11. **Content Security Policy (CSP) Not Implemented** (CVSS: 0)  
+    - **Severity:** Informational  
+    - **Impact:** Lack of a CSP weakens defenses against XSS and code injection.  
+    - **Instance:** Page 33  
+
+12. **JavaScript Source Map Detected** (CVSS: 0)  
+    - **Severity:** Informational  
+    - **Impact:** Disclosure of source code and internal structure.  
+    - **Instance:** Page 33  
 
 ---
 
-## Recommendations
+## Team Members  
 
-1. Address **high-severity vulnerabilities** immediately to mitigate critical risks.
-2. Resolve **medium- and low-severity issues** to improve the overall security posture.
-3. Implement ongoing security monitoring and regular penetration testing to ensure resilience.
-
+| **Name**             |
+|-----------------------|
+| Ahmed Hamada          |
+| Mazen Khaled          |
+| Ahmed Mahmoud         |
+|Mariam Abdelrahman     |
+|Safia Mohamed          |
 ---
 
-## Team Members
+## About HACK TACTIX  
 
-| Name                     | Role                 |
-|--------------------------|----------------------|
-| _[Team Member Name]_     | _[Role/Responsibility]_ |
-| _[Team Member Name]_     | _[Role/Responsibility]_ |
-| _[Team Member Name]_     | _[Role/Responsibility]_ |
-
----
-
-## About HACK TACTIX
-
-**HACK TACTIX** is a cybersecurity team dedicated to identifying vulnerabilities and securing organizational infrastructure. Our expertise includes penetration testing, vulnerability analysis, and developing actionable security recommendations.
-
+We are **HACK TACTIX**, a passionate cybersecurity team from DEPI, specializing in ethical hacking and vulnerability assessments. Our mission is to identify risks and provide actionable solutions to protect systems from potential threats.  
