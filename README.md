@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-As part of our graduation project, **HACK TACTIX** conducted a security assessment of the internal corporate network of **ginandjuice.shop**. This penetration test simulated the actions of an external threat actor aiming to identify vulnerabilities and provide actionable recommendations to strengthen the security of the organization's systems.
+As part of our graduation project, HACK TACTIX, a team of cybersecurity students from DEPI, conducted a simulated security assessment of the internal corporate network of ginandjuice.shop. This penetration test was carried out as a training exercise to mimic the actions of an external threat actor, aiming to identify vulnerabilities and propose actionable recommendations to enhance the security of the organization's systems.
 
 ---
 
@@ -101,4 +101,6 @@ During the assessment, **12 vulnerabilities** were identified and categorized as
 
 ## About HACK TACTIX  
 
-We are **HACK TACTIX**, a passionate cybersecurity team from DEPI, specializing in ethical hacking and vulnerability assessments. Our mission is to identify risks and provide actionable solutions to protect systems from potential threats.  
+We are HACK TACTIX, a team of cybersecurity enthusiasts and students from DEPI. This project represents our graduation thesis, where we conducted a simulated penetration test as part of our training in ethical hacking and vulnerability assessment.
+
+Our work is a simulation of a real-world security assessment, designed to identify vulnerabilities and propose actionable solutions to enhance system defenses. This project demonstrates our ability to apply the skills and knowledge gained during our studies in a practical, real-world scenario.
